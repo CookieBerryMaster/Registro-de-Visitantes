@@ -1,79 +1,88 @@
 <!-- Como parte de la solución digital, la empresa solicita una página web funcional que 
-     permita al personal de recepción registrar a los visitantes de forma rápida, segura y 
-     organizada.  -->
+    permita al personal de recepción registrar a los visitantes de forma rápida, segura y 
+    organizada.  -->
 
-<!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>CorpSolutions S.A.</title>
-     <link rel="stylesheet" href="style.css">
- </head>
- <body>
-     <!-- header  -->
-    <header>
-        <h1>CorpSolutions S.A</h1>
-    </header>
-
-    <!-- cuerpo -->
-    <main>
-        <h2>Registro de visitante</h2>
-        <!-- seccion para el registro -->
-        <section>
-            <form>
-            <label>Cedula: </label>
-            <input type="text" name="cedula" id="cedula" placeholder="Número de cedula">
-            <br>
-            <label>Nombre: </label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-            <br>
-            <label>Apellido: </label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-            <br>
-            <!-- selector de tipo de visita -->
-             <label for="visita">Departamento que visita: </label>
-             <select name="visita" id="visita">
-                <option value="Ventas">Ventas</option>
-                <option value="Credito">Credito</option>
-                <option value="Recursos Humanos">Recursos Humanos</option>
-             </select>
-            <!-- fin de selector -->
-            <br>
-            <label>Motivo de visita: </label>
-            <input type="text" name="motivo" id="motivo" placeholder="Motivo de visita">
-            <br>
-            <input type="button" value="registrar" id="btnRegistrar">
-            </form>
-        </section>
-        <!-- un salto -->
-        <br>  
-        <!-- seccion para la tabla -->
-        <section>
-            <table id="tablaVisitantes" border="1">
-                <thead>
-                    <tr>
-                        <th>Cédula</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Departamento</th>
-                        <th>Motivo de visita</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- aca se insertaran las filas con ayuda de javascript -->
-                </tbody>
-            </table>
-        </section>
-    </main>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CorpSolutions S.A.</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <h1>CorpSolutions S.A</h1>
+        </header>
     
-    <!-- footer -->
-    <footer>
-        <p class="mb-0">&copy;CorpSolutions S.A - 2025</p>
-    </footer>
-    <!-- script para la funcionalidad de la tabla -->
-    <script src="script.js"></script>
-
- </body>
- </html>
- 
+        <!-- cuerpo -->
+        <main>
+            <h2>Registro de visitante</h2>
+            <!-- sección para el registro -->
+            <section>
+                <form>
+                    <div class="form-group">
+                        <label for="cedula">Cédula:</label>
+                        <input type="text" name="cedula" id="cedula" placeholder="Número de cédula">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="visita">Departamento que visita:</label>
+                        <select name="visita" id="visita">
+                            <option value="Ventas">Ventas</option>
+                            <option value="Credito">Credito</option>
+                            <option value="Recursos Humanos">Recursos Humanos</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="motivo">Motivo de visita:</label>
+                        <input type="text" name="motivo" id="motivo" placeholder="Motivo de visita">
+                    </div>
+    
+                    <input type="button" value="Registrar" id="btnRegistrar">
+                </form>
+            </section>
+            
+            <br>
+    
+            <!-- sección para la tabla -->
+            <section>
+                <table id="tablaVisitantes" border="1">
+                    <thead>
+                        <tr>
+                            <th>Cédula</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Departamento</th>
+                            <th>Motivo de visita</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Las filas se insertarán con JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    
+        <!-- footer -->
+        <footer>
+            <p class="mb-0">&copy; CorpSolutions S.A - 2025</p>
+        </footer>
+    
+        <!-- script para la funcionalidad de la tabla -->
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
