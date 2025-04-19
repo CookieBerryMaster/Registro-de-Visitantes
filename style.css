@@ -1,0 +1,149 @@
+/* Fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Establecer el fondo y color de texto principal */
+body {
+    background: linear-gradient(to top left, #E5D2B8, #EAF7FA); /* Degradado de colores */
+    color: #1f2937;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para el encabezado */
+header {
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #725C3A; /* Color del encabezado */
+}
+
+/* Contenedor principal */
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Título del formulario */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #725C3A; /* Color del título */
+}
+
+/* Estilo del formulario */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crear dos columnas para el formulario */
+    gap: 1.5rem 2rem;
+    background-color: #E5E0D8; /* Fondo del formulario */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave para el formulario */
+}
+
+/* Estilo de cada grupo dentro del formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espaciado entre el label y el input */
+}
+
+/* Estilo de las etiquetas de los campos */
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* Estilo de los campos de texto y select */
+input[type="text"],
+select {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    background-color: #F9FAFB; /* Fondo de los inputs */
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave al enfocar */
+}
+
+/* Estilo para los inputs y selects cuando son enfocados */
+input:focus,
+select:focus {
+    border-color: #D2AB80; /* Color al enfocar */
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(210, 171, 128, 0.2); /* Sombra suave en el enfoque */
+}
+
+/* Estilo del botón de registrar */
+#btnRegistrar {
+    grid-column: span 2; /* El botón ocupa toda la fila */
+    padding: 0.9rem 1.5rem;
+    background: linear-gradient(135deg, #B3B792, #809671); /* Degradado en el botón */
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efecto de transición para interacción */
+}
+
+#btnRegistrar:hover {
+    transform: translateY(-2px); /* Efecto de desplazamiento al pasar el cursor */
+    box-shadow: 0 8px 20px rgba(179, 183, 146, 0.3); /* Sombra suave al pasar el cursor */
+}
+
+/* Estilo de la tabla de visitantes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave para la tabla */
+    border-left: none; 
+    border-right: none;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #f1f5f9; /* Borde inferior sutil */
+}
+
+th {
+    background-color: #F8FAFC; /* Fondo de los encabezados de la tabla */
+    color: #1E293B;
+    font-weight: 600;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #F1F5F9; /* Color de fondo en hover para filas */
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #64748B;
+    font-size: 0.875rem;
+}
+
